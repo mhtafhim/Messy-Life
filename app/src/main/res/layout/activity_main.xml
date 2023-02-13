@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00496b"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="270dp"
+        android:id="@+id/txt_mess_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="Mess Balance"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_total_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_mess_balance"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="Total Deposit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_total_meal_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_total_deposit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="Total Meal Cost"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_total_meals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Meals"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_total_meal_cost"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txt_meal_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Rate"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_total_meals"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txt_individual_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Individual Cost"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_meal_rate"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txt_shared_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Cost"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_individual_cost"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt_shared_cost"
+       android:layout_marginLeft="20dp"
+        android:id="@+id/AddMeal"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Add Meal"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/AddMeal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Addmember"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Add Member"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt_shared_cost"
+        android:layout_toRightOf="@id/AddMeal"
+       android:layout_marginLeft="40dp"
+        android:id="@+id/AddMembersMoney"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Add Member's Money"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/AddMembersMoney"
+        android:layout_toRightOf="@id/Addmember"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/ActiveMonthDetails"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Active Month Details"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/Addmember"
+        android:id="@+id/AddExpenses"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="ADD EXPENSES"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/AddExpenses"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logoutButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="LOGOUT"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <ListView
+        android:id="@+id/member_list"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"></ListView>
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/member_list"
+
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/deleteMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@+id/member_list"
+        android:layout_toRightOf="@+id/update_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

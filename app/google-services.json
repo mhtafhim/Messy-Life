@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607332833491",
+    "project_id": "messy-life-f8db8",
+    "storage_bucket": "messy-life-f8db8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607332833491:android:f9f61765d87815d4d21c26",
+        "android_client_info": {
+          "package_name": "com.example.messylife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607332833491-nk71r54qqja4hjrta4jnquc6g243k5tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnTdWgdhtCTynYtOMEbHO_hekiGLIdSRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607332833491-nk71r54qqja4hjrta4jnquc6g243k5tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
