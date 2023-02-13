@@ -29,6 +29,7 @@ public class MemberView extends AppCompatActivity {
     private ArrayAdapter<String> adapter;
     Module module;
      Button deleteMember;
+    String mealRate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,8 @@ public class MemberView extends AppCompatActivity {
         module = ((Module)getApplicationContext());
         member_list = (ListView) findViewById(R.id.member_list);
         member_list.setAdapter(adapter);
+
+        mealRate = getIntent().getStringExtra("mealRate");
 
         mDatabase.addChildEventListener(new ChildEventListener() {
             @Override
@@ -69,14 +72,22 @@ public class MemberView extends AppCompatActivity {
 
             }
         });
+
+
         member_list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               module.setGvalue_usename(arrayList.get(position));
-               module.setGvalue_email(arrayList.get(position));
+                module.setGvalue_usename(arrayList.get(position));
+                final String str = module.getGvalue_usename();
+                Intent intent = new Intent(MemberView.this, SelectedMemberDetails.class);
+                intent.putExtra("mealrate",mealRate);
+                intent.putExtra("username",str);
+                startActivity(intent);
+
             }
         });
+        /*
         deleteMember.setOnClickListener(v -> {
             final String str = module.getGvalue_usename().substring(0,8);
             if(str==""){
@@ -99,5 +110,17 @@ public class MemberView extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
+
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        Intent intent =new Intent(MemberView.this,MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+        super.onBackPressed();
     }
 }

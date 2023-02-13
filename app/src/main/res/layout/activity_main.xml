@@ -25,7 +25,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
-        android:text="Mess Balance"
+        android:text="Mess Balance : "
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="270dp"
+        android:id="@+id/show_mess_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/txt_mess_balance"
+        android:layout_marginLeft="20dp"
+        android:text="0.00tk"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
     <TextView
@@ -34,29 +46,69 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_mess_balance"
         android:layout_alignParentLeft="true"
+        android:textColor="@color/white"
         android:layout_marginLeft="20dp"
-        android:text="Total Deposit"
+        android:text="Total Deposit : "
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/show_total_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00tk"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_mess_balance"
+        android:layout_toRightOf="@+id/txt_total_deposit"
+        android:layout_marginLeft="20dp"
+        />
 
     <TextView
         android:id="@+id/txt_total_meal_cost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_total_deposit"
+        android:textColor="@color/white"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
-        android:text="Total Meal Cost"
+        android:text="Total Meal Cost : "
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/show_total_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00tk"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_total_deposit"
+        android:layout_toRightOf="@+id/txt_total_meal_cost"
+        android:layout_marginLeft="20dp"
+        />
 
     <TextView
         android:id="@+id/txt_total_meals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Meals"
+        android:text="Total Meals : "
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_below="@id/txt_total_meal_cost"
         android:layout_marginLeft="20dp"
         android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/total_meals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_total_meal_cost"
+        android:layout_toRightOf="@+id/txt_total_meals"
+        android:layout_marginLeft="20dp"
+       />
 
     <TextView
         android:id="@+id/txt_meal_rate"
@@ -64,9 +116,22 @@
         android:layout_height="wrap_content"
         android:text="Meal Rate"
         android:textSize="20sp"
-        android:layout_below="@id/txt_total_meals"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_meals"
         android:layout_marginLeft="20dp"
         android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/show_meal_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00tk"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/total_meals"
+        android:layout_toRightOf="@+id/txt_meal_rate"
+        android:layout_marginLeft="20dp"
+        />
 
     <TextView
         android:id="@+id/txt_individual_cost"
@@ -75,14 +140,18 @@
         android:text="Individual Cost"
         android:textSize="20sp"
         android:layout_below="@id/txt_meal_rate"
+        android:textColor="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_alignParentLeft="true"/>
+
+
 
     <TextView
         android:id="@+id/txt_shared_cost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shared Cost"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_below="@id/txt_individual_cost"
         android:layout_marginLeft="20dp"
@@ -148,6 +217,21 @@
         android:text="ADD EXPENSES"
         android:background="#ffffff"
         android:textSize="15sp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/Addmember"
+        android:layout_toRightOf="@+id/AddMeal"
+        android:id="@+id/Refresh"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Refresh"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+
     <Button
         android:layout_marginTop="20dp"
         android:layout_below="@+id/AddExpenses"

@@ -19,6 +19,18 @@ class Member {
     private String Age;
     private int deposit;
     private int mealCount;
+    private int expenses;
+
+
+    public int getExpenses() {
+        return expenses;
+    }
+
+    public void setExpenses(int expenses) {
+        this.expenses = expenses;
+    }
+
+
 
 
     public int getMealCount() {
@@ -53,6 +65,7 @@ class Member {
         this.bloodGroup = bloodGroup;
         this.mealCount = 0;
         this.deposit = 0;
+        this.expenses = 0;
         this.userName = userName;
 
     }
@@ -104,6 +117,8 @@ class Member {
         Age = age;
     }
     public String toString(){
-        return this.fullName;
+        return this.userName;
     }
+
+   // public int getTheMeal(){return this.mealCount;};
 }

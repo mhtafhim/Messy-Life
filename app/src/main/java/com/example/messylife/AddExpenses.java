@@ -1,6 +1,5 @@
 package com.example.messylife;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,7 +13,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ServerValue;
 
-public class AddDeposit extends AppCompatActivity {
+public class AddExpenses extends AppCompatActivity {
+
 
     Button addButton;
     Member member;
@@ -23,14 +23,11 @@ public class AddDeposit extends AppCompatActivity {
     DatabaseReference reference;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_deposit);
-
-
-
-
+        setContentView(R.layout.activity_add_expenses);
 
         addButton = (Button)findViewById(R.id.btn_add);
 
@@ -52,18 +49,21 @@ public class AddDeposit extends AppCompatActivity {
                 //   HashMap User = new HashMap();
                 //    User.put("mealCount",meal+total);
                 //   reference = FirebaseDatabase.getInstance().getReference("Members");
-                reference.child(uname).child("deposit").setValue(ServerValue.increment(total));
+                reference.child(uname).child("expenses").setValue(ServerValue.increment(total));
                 ///      reference.child(username.getText().toString()).updateChildren(User);
-                Toast.makeText(AddDeposit.this,"Successfully Updated",Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddExpenses.this,"Successfully Updated",Toast.LENGTH_SHORT).show();
 
             }});
+
+
+
 
     }
 
     @Override
     public void onBackPressed(){
 
-        Intent intent =new Intent(AddDeposit.this,MainActivity.class);
+        Intent intent =new Intent(AddExpenses.this,MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
 

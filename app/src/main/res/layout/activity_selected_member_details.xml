@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Displaying Data:"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv2"
+
+        />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+
+        android:text="Name : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="UserName : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Email : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PermanentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="PermanentAddress : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/bloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PermanentAddress"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Blood Group : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodGroup"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Age : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Age"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Phone : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/MealCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Meal Count : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MealCnt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Deposit : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Deposit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Expenses : "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/MealCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Expenses"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Total Cost : "
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/MealCost"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/refreshbtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Refresh"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/refreshbtn"
+
+        android:layout_below="@+id/MealCost"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/DeleteBtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="showButtonClicked"
+        android:text="Delete"
+        android:background="#ffffff"
+        android:textSize="15sp" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

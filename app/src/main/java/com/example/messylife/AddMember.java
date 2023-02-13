@@ -2,6 +2,7 @@ package com.example.messylife;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,7 +60,18 @@ public class AddMember extends AppCompatActivity {
                 PermanentAddress.setText("");
                 BloodGroup.setText("");
                 Age.setText("");
+                UserName.setText("");
             }
         });
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        Intent intent =new Intent(AddMember.this,MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+        super.onBackPressed();
     }
 }
